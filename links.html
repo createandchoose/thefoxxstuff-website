@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheFoxxStuff | Links</title>
+    <style>
+        @font-face {
+            font-family: Syne;
+            src: url(/fonts/Syne-Bold.ttf);
+        }
+        
+        @font-face {
+            font-family: 'Space Mono';
+            src: url(/fonts/SpaceMono-Regular.ttf);
+        }
+        
+        @font-face {
+            font-family: UnicaOne;
+            src: url(/fonts/UnicaOne-Regular.ttf);
+        }
+        
+        body {
+            background-color: #111;
+            padding: 0;
+            margin: 0;
+            font-family: 'Space Mono';
+            font-size: 14px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .container {
+            margin: auto;
+            max-width: 600px;
+        }
+        
+        @media screen and (max-width: 636px) {
+            .container {
+                max-width: none;
+                padding-right: 18px;
+                padding-left: 18px;
+            }
+        }
+        
+        .Headpx {
+            width: 100%;
+            height: 140px;
+        }
+        
+        .logo-text {
+            display: block;
+            position: absolute;
+            width: 100%;
+            margin-top: 26px;
+            font-family: UnicaOne;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .h1-text {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-family: Syne, sans-serif;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .link {
+            display: block;
+            height: 48px;
+            margin-bottom: 10px;
+            padding-bottom: 0px;
+            -o-object-fit: fill;
+            object-fit: fill;
+        }
+        
+        .button {
+            display: block;
+            padding: 13px 15px;
+            border: 1px solid #373737;
+            border-radius: 5px;
+            background-color: #111;
+            font-family: 'Space Mono', sans-serif;
+            text-align: center;
+            line-height: inherit;
+            color: #fff;
+            transition: all 0.2s ease;
+        }
+        
+        .link-icon {
+            position: absolute;
+            display: block;
+            margin-top: -38px;
+            margin-left: 14px;
+        }
+        
+        .link-bar {
+            position: absolute;
+            position: static;
+            display: block;
+            width: 4px;
+            height: 24px;
+            margin: -36.5px 12px 0px 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            float: right;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #b3b3b3;
+            transition: all 0.2s ease;
+        }
+        
+        .link-a:hover .button {
+            transition: all 0.2s ease;
+            background-color: #1F1F1F;
+            border: 1px solid #7F7F7F;
+        }
+        
+        .link-a:hover #Bandcamp {
+            transition: all 0.15s ease;
+            background-color: #4591A4;
+        }
+        
+        .link-a:hover #Soundcloud {
+            transition: all 0.15s ease;
+            background-color: #FF4B01;
+        }
+        
+        .link-a:hover #Spotify {
+            transition: all 0.15s ease;
+            background-color: #1ED760;
+        }
+        
+        .link-a:hover #Youtube {
+            transition: all 0.15s ease;
+            background-color: #FF0000;
+        }
+        
+        .link-a:hover #Twitter {
+            transition: all 0.15s ease;
+            background-color: #1D9BF0;
+        }
+        
+        .link-a:hover #Vk {
+            transition: all 0.15s ease;
+            background-color: #0077FF;
+        }
+        
+        .link-a:active .button {
+            transition: all 0.1s ease;
+            background-color: #0B0B0B;
+            border: 1px solid #fff;
+        }
+        
+        .list {
+            padding-left: 20px;
+            color: #7e7e7e;
+        }
+        
+        ul,
+        ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+        
+        .link-other {
+            font-family: 'Space Mono', sans-serif;
+            color: #7e7e7e;
+            font-style: normal;
+            text-decoration: underline;
+            transition: all 0.2s ease;
+        }
+        
+        .link-other:hover {
+            color: #C4C4C4;
+            transition: all 0.15s ease;
+        }
+        
+        .link-other:active {
+            color: #ffffff;
+            transition: all 0.1s ease;
+        }
+        
+        .line {
+            border-bottom: 1px solid #2D2D2D;
+            margin-top: 45px;
+            margin-bottom: 25px;
+        }
+        
+        .сopyright {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-family: 'Space Mono', sans-serif;
+            color: #2d2d2d;
+            text-align: center;
+        }
+        
+        .footer-socicals {
+            display: inline-block;
+            width: 100%;
+            margin: auto;
+            color: #000;
+            text-align: center;
+        }
+        
+        .footer-socicalsimg {
+            transition: 0.2s;
+            transform: scale(1, 1);
+            opacity: 100%;
+        }
+        
+        .footer-socicals img:hover {
+            transition: 0.2s;
+            transform: scale(1.05, 1.05);
+            opacity: 80%;
+        }
+        
+        .background {
+            width: 100%;
+            position: absolute;
+            z-index: -99;
+            height: 500px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        
+        .back {
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111111 82.81%, #111111 100%), url(/images/dots.png), rgba(17, 17, 17, 0.6);
+            background-blend-mode: normal, multiply, normal;
+            z-index: -98;
+            width: 100%;
+            position: absolute;
+            height: 500px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img class="background" src="/images/stuff.svg">
+    <div class="back"></div>
+
+    <a href="">
+        <div class="logo-text">TheFoxxStuff</div>
+    </a>
+
+    <div class="container">
+        <div class="Headpx"></div>
+
+        <div class="h1-text">Links</div>
+
+        <a class="link-a" href="https://thefoxxstuff.bandcamp.com" target="_blank">
+            <div class="link">
+                <div class="button">Bandcamp</div>
+                <img width="28px" height="28px" src="/images/icons/Bandcamp-28.svg" class="link-icon">
+                <div class="link-bar" id="Bandcamp"></div>
+            </div>
+        </a>
+
+        <a class="link-a" href="https://soundcloud.com/thefoxxstuff" target="_blank">
+            <div class="link">
+                <div class="button">SoundCloud</div>
+                <img width="28px" height="28px" src="/images/icons/Soundcloud-28.svg" class="link-icon">
+                <div class="link-bar" id="Soundcloud"></div>
+            </div>
+        </a>
+
+        <a class="link-a" href="https://open.spotify.com/artist/2CKNTRQl0gE0ga0BHxeENa" target="_blank">
+            <div class="link">
+                <div class="button">Spotify</div>
+                <img width="28px" height="28px" src="/images/icons/Spotify-28.svg" class="link-icon">
+                <div class="link-bar" id="Spotify"></div>
+            </div>
+        </a>
+
+        <a class="link-a" href="https://www.youtube.com/channel/UCJqVIBeA789aGRlDy_WyQsw" target="_blank">
+            <div class="link">
+                <div class="button">Youtube</div>
+                <img width="28px" height="28px" src="/images/icons/Youtube-28.svg" class="link-icon">
+                <div class="link-bar" id="Youtube"></div>
+            </div>
+        </a>
+
+        <a class="link-a" href="https://twitter.com/TheFoxxStuff" target="_blank">
+            <div class="link">
+                <div class="button">Twitter</div>
+                <img width="28px" height="28px" src="/images/icons/Twitter.svg" class="link-icon">
+                <div class="link-bar" id="Twitter"></div>
+            </div>
+        </a>
+
+        <a class="link-a" href="https://vk.com/thefoxxstuff" target="_blank">
+            <div class="link">
+                <div class="button">Vk</div>
+                <img width="28px" height="28px" src="/images/icons/Vk-28.svg" class="link-icon">
+                <div class="link-bar" id="Vk"></div>
+            </div>
+        </a>
+
+        <div class="h1-text">Other links</div>
+
+        <ul role="list" class="list">
+            <li class="list-item"><a href="https://music.yandex.ru/artist/7459036" target="_blank" class="link-other">Yandex Music</a></li>
+            <li class="list-item"><a href="https://vk.com/artist/thefoxxstuff_mtywndmznje2ng" target="_blank" class="link-other">VK Music</a></li>
+            <li class="list-item"><a href="https://soundcloud.com/thefoxxstuff" target="_blank" class="link-other">Soundcloud</a></li>
+            <li class="list-item"><a href="https://music.apple.com/us/artist/thefoxxstuff/1465861729" target="_blank" class="link-other">iTunes</a></li>
+            <li class="list-item"><a href="https://music.amazon.com/artists/B07SC791JC/thefoxxstuff" target="_blank" class="link-other">Amazon Music</a></li>
+            <li class="list-item"><a href="https://www.youtube.com/channel/UCauIAdeXUFD1B-eqzRd9RjA" target="_blank" class="link-other">Youtube Topic</a></li>
+            <li class="list-item"><a href="https://www.deezer.com/artist/66597132" target="_blank" class="link-other">Dezeer</a></li>
+        </ul>
+
+    </div>
+
+    <div class="footer">
+        <div class="line"></div>
+        <div class="footer-socicals">
+            <a href="https://vk.com/thefoxxstuff" class="footer-socical-object"><img src="/images/icons/Vk.svg"></a>
+            <a href="https://www.instagram.com/thefoxxstuff" class="footer-socical-object"><img src="/images/icons/Instagram.svg"></a>
+            <a href="https://twitter.com/TheFoxxStuff" class="footer-socical-object"><img src="/images/icons/Twitter.svg"></a>
+            <a href="https://thefoxxstuff.bandcamp.com" class="footer-socical-object"><img src="/images/icons/Bandcamp.svg"></a>
+        </div>
+        <div class="сopyright">All rights reserved© 2022 TheFoxxStuff</div>
+    </div>
+</body>
+
+</html>
