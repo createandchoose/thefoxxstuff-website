@@ -21,6 +21,11 @@ body {
     font-size: 14px;
 }
 
+::selection {
+    background: #00ffae;
+    color: #000;
+}
+
 a {
     text-decoration: none;
 }
@@ -90,6 +95,8 @@ a {
     display: block;
     margin-top: -38px;
     margin-left: 14px;
+    transition: all 0.15s ease;
+    opacity: 100%;
 }
 
 .link-bar {
@@ -148,6 +155,11 @@ a {
     transition: all 0.1s ease;
     background-color: #0B0B0B;
     border: 1px solid #fff;
+}
+
+.link-a:active .link-icon {
+    transition: all 0.1s ease;
+    opacity: 80%;
 }
 
 .list {
