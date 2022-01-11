@@ -19,9 +19,10 @@ body {
     margin: 0;
     font-family: 'Space Mono';
     font-size: 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
- ::selection {
+::selection {
     background: #00ffae;
     color: #000;
 }
@@ -123,7 +124,7 @@ a {
 
 .link-a:hover #Bandcamp {
     transition: all 0.15s ease;
-    background-color: #4591A4;
+    background-color: #10ACD7;
 }
 
 .link-a:hover #Soundcloud {
@@ -259,20 +260,60 @@ li {
     overflow: hidden;
 }
 
+.card-service {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 143px;
+    filter: grayscale(100%);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.grid-item-card:hover .card-service {
+    filter: grayscale(0%);
+    transition: 0.15s;
+}
+
 .card {
     display: inline-block;
     width: 155px;
     margin-right: 28px;
     margin-bottom: 14px;
-    transition: 0.8s;
+    transition: 0.2s;
+}
+
+.card:hover .card-title {
+    color: #fff;
+    transition: 0.15s;
+}
+
+.card:hover img {
+    border: 1px solid #7e7e7e;
+    transition: 0.15s;
+}
+
+.card:active img {
+    border: 1px solid #fff;
+    transition: 0.15s;
+}
+
+.card:active .card-price {
+    color: #7e7e7e;
+    transition: 0.15s;
+}
+
+.card:active .card-title {
+    color: #373737;
+    transition: 0.15s;
 }
 
 .card img {
     width: 170px;
     height: 170px;
-    border: 1px solid #7e7e7e;
+    border: 1px solid #373737;
     border-radius: 5px;
     overflow: hidden;
+    transition: 0.2s;
 }
 
 .card-price {
@@ -300,7 +341,7 @@ li {
 @media screen and (max-width: 636px) {
     .grid-item-card {
         width: calc((100% - 20px * 2) / 2);
-        margin-top: 5px;
+        margin-top: 18px;
         margin-left: 5px;
         margin-right: 5px;
         text-align: center;
@@ -323,7 +364,6 @@ li {
 @media screen and (max-width: 420px) {
     .grid-item-card {
         width: calc((100% - 10px * 2) / 2);
-        margin-top: 5px;
         margin-left: 0px;
         margin-right: 5px;
         text-align: center;
@@ -332,15 +372,17 @@ li {
         margin-right: 0px;
     }
     .card img {
-        height: 162px;
-        width: 162px;
+        height: 150px;
+        width: 150px;
+    }
+    .card-service {
+        margin-left: 124px;
     }
 }
 
 @media screen and (max-width: 370px) {
     .grid-item-card {
         width: calc((100% - 10px * 2) / 2);
-        margin-top: 5px;
         margin-left: 0px;
         margin-right: 5px;
         text-align: center;
@@ -358,12 +400,14 @@ li {
     .card-title {
         text-align: center;
     }
+    .card-service {
+        margin-left: 115px;
+    }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 340px) {
     .grid-item-card {
         width: calc((100% - 20px * 1) / 1);
-        margin-top: 5px;
         margin-left: 5px;
         margin-right: 5px;
         text-align: center;
@@ -378,23 +422,11 @@ li {
     .card-title {
         text-align: left;
     }
+    .card-service {
+        margin-left: 124px;
+    }
 }
 
-
-/* @media screen and (max-width: 636px) {
-    .grid-item-card {
-        width: calc((100% - 25px * 2) / 2);
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: center;
-    }
-} */
-
-
-/* .grid-item-card {
-display: flex;
-justify-content: center;
-align-items: center; 
-display: inline-block;
-} */
+.grid-cards {
+    margin-top: -15px;
+}
