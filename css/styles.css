@@ -21,7 +21,7 @@ body {
     font-size: 14px;
 }
 
-::selection {
+ ::selection {
     background: #00ffae;
     color: #000;
 }
@@ -264,6 +264,7 @@ li {
     width: 155px;
     margin-right: 28px;
     margin-bottom: 14px;
+    transition: 0.8s;
 }
 
 .card img {
@@ -286,3 +287,114 @@ li {
     font-family: 'Space Mono', sans-serif;
     color: #aeaeae;
 }
+
+.grid-item-card {
+    width: calc((100% - 30px * 3) / 3);
+    margin-top: 18px;
+    margin-left: 12px;
+    margin-right: 12px;
+    display: inline-block;
+    transition: 0.8s;
+}
+
+@media screen and (max-width: 636px) {
+    .grid-item-card {
+        width: calc((100% - 20px * 2) / 2);
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    .card-price {
+        text-align: left;
+    }
+    .card-title {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    .card {
+        margin-left: 0px;
+        margin-right: 17px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .grid-item-card {
+        width: calc((100% - 10px * 2) / 2);
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    .card {
+        margin-right: 0px;
+    }
+    .card img {
+        height: 162px;
+        width: 162px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .grid-item-card {
+        width: calc((100% - 10px * 2) / 2);
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    .card {
+        margin-right: 0px;
+    }
+    .card img {
+        height: 130px;
+        width: 130px;
+    }
+    .card-price {
+        text-align: center;
+    }
+    .card-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .grid-item-card {
+        width: calc((100% - 20px * 1) / 1);
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    .card img {
+        height: 150px;
+        width: 150px;
+    }
+    .card-price {
+        text-align: left;
+    }
+    .card-title {
+        text-align: left;
+    }
+}
+
+
+/* @media screen and (max-width: 636px) {
+    .grid-item-card {
+        width: calc((100% - 25px * 2) / 2);
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+} */
+
+
+/* .grid-item-card {
+display: flex;
+justify-content: center;
+align-items: center; 
+display: inline-block;
+} */
