@@ -430,3 +430,27 @@ li {
 .grid-cards {
     margin-top: -15px;
 }
+
+.audio-demo {
+    width: 100%;
+}
+
+audio {
+    height: 49px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #fff;
+}
+
+.p-demo {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: #1100ff;
+    border-radius: 5px;
+    border: 1px solid #373737;
+    font-family: 'Space Mono';
+}
