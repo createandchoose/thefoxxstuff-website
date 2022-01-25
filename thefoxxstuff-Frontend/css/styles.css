@@ -468,7 +468,7 @@ p {
 }
 
 #article-img {
-    background-color: #00ffae;
+    background-color: #131313;
 }
 
 .article-body {
@@ -529,4 +529,17 @@ p {
 .article-button-center {
     float: right;
     margin-top: 6px;
+}
+
+.grid-article {
+    margin-top: -15px;
+}
+
+.grid-item-article {
+    width: calc((100% - 30px * 2) / 2);
+    margin-top: 18px;
+    margin-left: 12px;
+    margin-right: 12px;
+    display: inline-block;
+    transition: 0.8s;
 }
